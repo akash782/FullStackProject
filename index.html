@@ -1,0 +1,655 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+
+	<head>
+	    <!-- Mobile Specific Meta -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- Favicon-->
+	    <link rel="shortcut icon" href="img/fav.png">
+	    <!-- Author Meta -->
+	    <meta name="author" content="codepixer">
+	    <!-- Meta Description -->
+	    <meta name="description" content="">
+	    <!-- Meta Keyword -->
+	    <meta name="keywords" content="">
+	    <!-- meta character set -->
+	    <meta charset="UTF-8">
+	    <!-- Site Title -->
+	    <title>Literario 4.0</title>
+
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	    <!--
+			CSS
+			============================================= -->
+	    <link rel="stylesheet" href="css/linearicons.css">
+	    <link rel="stylesheet" href="css/font-awesome.min.css">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/magnific-popup.css">
+	    <link rel="stylesheet" href="css/nice-select.css">
+	    <link rel="stylesheet" href="css/animate.min.css">
+	    <link rel="stylesheet" href="css/owl.carousel.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <!--team-->
+	    <style>
+	        html {
+	            box-sizing: border-box;
+	        }
+
+	        *,
+	        *:before,
+	        *:after {
+	            box-sizing: inherit;
+	        }
+
+	        .column {
+	            float: left;
+	            width: 25%;
+	            margin-bottom: 16px;
+	            padding: 0 8px;
+	        }
+
+	        @media screen and (max-width: 650px) {
+	            .column {
+	                width: 50%;
+	                display: block;
+	            }
+	        }
+
+	        .card {
+	            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	        }
+
+	        .container {
+	            padding: 0 16px;
+	        }
+
+	        .container::after,
+	        .row::after {
+	            content: "";
+	            clear: both;
+	            display: table;
+	        }
+
+	        .title {
+	            color: grey;
+	        }
+
+	        .button {
+	            border: none;
+	            outline: 0;
+	            display: inline-block;
+	            padding: 8px;
+	            color: white;
+	            background-color: #000;
+	            text-align: center;
+	            cursor: pointer;
+	            width: 100%;
+	        }
+
+	        .button:hover {
+	            background-color: #555;
+	        }
+
+	        .w3-justify {
+	            text-align: justify;
+	            margin-left: 25%;
+	            margin-right: 25%;
+	            color: black;
+	            font-size: 25px;
+	            font-family: cursive;
+	            line-height: normal;
+	        }
+
+	        .w3-justify1 {
+	            text-align: justify;
+	            margin-left: 25%;
+	            margin-right: 25%;
+	            color: black;
+	            font-size: 18px;
+	            font-family: cursive;
+	            line-height: normal;
+	        }
+
+	        .blf {
+	            background: #a8ff78;
+	            /* fallback for old browsers */
+	            background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+	            /* Chrome 10-25, Safari 5.1-6 */
+	            background: linear-gradient(to right, #78ffd6, #a8ff78);
+	            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	        }
+
+
+	        .spinner {
+	            width: 40px;
+	            height: 40px;
+	            background-color: #333;
+
+	            position: absolute;
+	            top: 48%;
+	            left: 48%;
+	            -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+	            animation: sk-rotateplane 1.2s infinite ease-in-out;
+	        }
+
+	        @-webkit-keyframes sk-rotateplane {
+	            0% {
+	                -webkit-transform: perspective(120px)
+	            }
+
+	            50% {
+	                -webkit-transform: perspective(120px) rotateY(180deg)
+	            }
+
+	            100% {
+	                -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	            }
+	        }
+
+	        @keyframes sk-rotateplane {
+	            0% {
+	                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	                -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	            }
+
+	            50% {
+	                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	                -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	            }
+
+	            100% {
+	                transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	                -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	            }
+	        }
+
+
+
+	        .spinner-wrapper {
+	            position: fixed;
+	            top: 0;
+	            left: 0;
+	            right: 0;
+	            bottom: 0;
+	            background-color: #ff6347;
+	            z-index: 999999;
+	        }
+	    </style>
+
+	    <!--team end-->
+	</head>
+
+	<body>
+
+
+	    <div class="spinner-wrapper">
+	        <div class="spinner"></div>
+	    </div>
+
+
+
+	    <header id="header" id="home">
+	        <div class="container">
+	            <div class="row align-items-center justify-content-between d-flex">
+	                <div id="logo">
+	                    <a href="index.html"><img src="" alt="" title="" /></a>
+	                </div>
+	                <nav id="nav-menu-container">
+	                    <ul class="nav-menu">
+	                        <li class="menu-active"><a href="#home"><i class="fa fa-home hh" aria-hidden="true" style="margin: 8px;"></i>Home</a></li>
+	                        <li><a href="#123"><i class="fa fa-user hh" aria-hidden="true" style="margin: 8px;"></i>About</a></li>
+	                        <li><a href="#456"><i class="fa fa-calendar hh" aria-hidden="true" style="margin: 8px;"></i>Events</a></li>
+	                        <li><a href="#678"><i class="fa fa-users hh" aria-hidden="true" style="margin: 8px;"></i>Team</a></li>
+
+
+
+	                        <li><a class="ticker-btn" href="#111"><i class="fa fa-address-book hh" aria-hidden="true" style="margin: 8px;"></i>Contact Us</a></li>
+	                    </ul>
+	                </nav><!-- #nav-menu-container -->
+	            </div>
+	        </div>
+	    </header><!-- #header -->
+
+
+	    <!-- start banner Area -->
+	    <div>
+	        <section class="banner-area relative" id="home">
+	            <div class="overlay overlay-bg"></div>
+	            <div class="container">
+	                <div class="row fullscreen d-flex align-items-center justify-content-center">
+	                    <div class="banner-content col-lg-9 col-md-12">
+
+	                        <h1 style="color: white;font-size: 55px">Welcome! To Literario</h1>
+	                        <h3 style="color: white;">Lets Give Voice To Thoughts</h3>
+
+	                    </div>
+	                </div>
+	            </div>
+
+	        </section>
+	        <br>
+	        <br>
+	        <!-- End banner Area -->
+
+	        <!-- Start home-video Area -->
+	        <section class="about" id="123">
+
+
+	            <h5 style="text-align: center;font-size: 40px;"><b>ABOUT</b></h5>
+	            <img src="img/litt.png" style="height: 250px;width: 250px;margin-left: auto;margin-right: auto;display: block">
+	            <p class="w3-justify">Literario, the official literary club of Glau
+	                provides platform to get in with the taste of
+	                Literature, literario is just the right step that
+	                gives students stage that is all theirs. It works to
+	                invoke the diction of participation and team spirit
+	                and gets into the zeal of making its members ready
+	                to face the world in terms of communication. It
+	                brings in activities and challenges that brush up
+	                literary and communication skills of an individual.</p>
+
+
+
+
+
+	            <br>
+	            <br>
+	        </section>
+
+	        <!-- Start speakers Area -->
+	        <section class="spekers-area pb-100" id="speakers">
+	            <h5 style="text-align: center;font-size: 40px;"><b>MENTORS</b></h5>
+	            <br>
+	            <br>
+	            <div class="container-fluid">
+	                <div class="row no-padding">
+	                    <div class="active-speaker-carusel col-lg-12 no-padding">
+	                        <div class="single-speaker item">
+	                            <div class="container">
+	                                <div class="row align-items-center">
+	                                    <div class="col-md-6 speaker-img no-padding">
+	                                        <img src="img/nitin-bhatnagar.jpg" alt="">
+	                                    </div>
+	                                    <div class="col-md-6 speaker-info no-padding">
+	                                        <h6 class="text-uppercase">MENTOR</h6>
+	                                        <h1 class="text-white">Nitin Bhatnagar</h1>
+
+	                                        <p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+	                                        <p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+	                                        <ul>
+	                                            <a href="#"><i class="fa fa-facebook"></i></a>
+	                                            <a href="#"><i class="fa fa-twitter"></i></a>
+	                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+	                                            <a href="#"><i class="fa fa-behance"></i></a>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="single-speaker item">
+	                            <div class="container">
+	                                <div class="row align-items-center">
+	                                    <div class="col-md-6 speaker-img no-padding">
+	                                        <img src=" img/93largefrt_Mamta-Bhatnagar2.jpg" alt="">
+	                                    </div>
+	                                    <div class="col-md-6 speaker-info no-padding">
+	                                        <h6 class="text-uppercase">MENTOR</h6>
+	                                        <h1 class="text-white">Mamta Bhatnagar</h1>
+
+	                                        <p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+	                                        <p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+	                                        <ul>
+	                                            <a href="#"><i class="fa fa-facebook"></i></a>
+	                                            <a href="#"><i class="fa fa-twitter"></i></a>
+	                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+	                                            <a href="#"><i class="fa fa-behance"></i></a>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="single-speaker item">
+	                            <div class="container">
+	                                <div class="row align-items-center">
+	                                    <div class="col-md-6 speaker-img no-padding">
+	                                        <img src="img/160largefrt_Dr.-Mukund-Kumar-Mishra.jpg" alt="">
+	                                    </div>
+	                                    <div class="col-md-6 speaker-info no-padding">
+	                                        <h6 class="text-uppercase">MENTOR</h6>
+	                                        <h1 class="text-white">Mukund Mishra</h1>
+
+	                                        <p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+	                                        <p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+	                                        <ul>
+	                                            <a href="#"><i class="fa fa-facebook"></i></a>
+	                                            <a href="#"><i class="fa fa-twitter"></i></a>
+	                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+	                                            <a href="#"><i class="fa fa-behance"></i></a>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="single-speaker item">
+	                            <div class="container">
+	                                <div class="row align-items-center">
+	                                    <div class="col-md-6 speaker-img no-padding">
+	                                        <img src="img/166largefrt_Dr.Jaya-Sharma.jpg" alt="">
+	                                    </div>
+	                                    <div class="col-md-6 speaker-info no-padding">
+	                                        <h6 class="text-uppercase">MENTOR</h6>
+	                                        <h1 class="text-white">Jaya Sharma</h1>
+
+	                                        <p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+	                                        <p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+	                                        <ul>
+	                                            <a href="#"><i class="fa fa-facebook"></i></a>
+	                                            <a href="#"><i class="fa fa-twitter"></i></a>
+	                                            <a href="#"><i class="fa fa-dribbble"></i></a>
+	                                            <a href="#"><i class="fa fa-behance"></i></a>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- End spekers Area -->
+
+
+
+	        <!--team-->
+	        <section class=blf id="456">
+	            <br>
+	            <br>
+
+	            <h5 style="text-align: center;font-size: 40px;"><b>BRIJ LITERATURE FESTIVAL</b></h5>
+	            <img src="img/BLF.png" style="height: 250px;width: 250px;margin-left: auto;margin-right: auto;display: block">
+	            <p class="w3-justify1">The Brij Literature Festival(BLF) is a magnificent Literature festival in the birth place of Lord Krishna , embodying a rich heritage and a great history of literature. BLF is a beautiful initiative in the form of a two day celebration to promote and preserve the rich heritage of Brij and the nation . The main purpose is to foster and uphold the great Literary and cultural background and portray immense profoundness of the kind of literature Brij actually holds. The event in itself is going to be an extravaganza. This initiative promises to feature a variety of presentation workshops and readings by authors from various walks of life. The festival is going to provide a great opportunity to the participants and audience to learn and
+	                admire the beauty of literature.</p>
+
+	            <br>
+	            <br>
+
+	        </section>
+
+	        <br>
+	        <br>
+
+
+
+
+	        <section id="678">
+	            <div class="row">
+	                <div class="column">
+	                    <div class="card">
+	                        <img src="img/mnpdtDSC_0108-01.jpeg" alt="Jane" style="width:100%">
+	                        <div class="container">
+	                            <h2>Saransh Agrawal</h2>
+	                            <p class="title">PRESIDENT</p>
+
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="column">
+	                    <div class="card">
+	                        <img src="img/kranti.jpg" alt="Mike" style="width:100%">
+	                        <div class="container">
+	                            <h2>Kranti Singh</h2>
+	                            <p class="title">VICE PRESIDENT</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="column">
+	                    <div class="card">
+	                        <img src="img/curator.jpg" alt="Mike" style="width:100%">
+	                        <div class="container">
+	                            <h2>Vaibhav Karayat</h2>
+	                            <p class="title">CURATOR</p>
+
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="column">
+	                    <div class="card">
+	                        <img src="img/Drashtee.jpg" alt="John" style="width:100%">
+	                        <div class="container">
+	                            <h2>Drashtee Gaur</h2>
+	                            <p class="title">GENERAL SECRETARY</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+
+	        </section>
+
+
+	        <!-- Start price Area -->
+	        <section class="price-area section-gap">
+	            <div class="container">
+	                <div class="row d-flex justify-content-center">
+	                    <div class="menu-content pb-70 col-lg-8">
+	                        <div class="title text-center">
+	                            <h1 class="mb-10">TEAMS</h1>
+
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-lg-4 col-md-6 single-price">
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/testimonial-why-icon2-300x29.png" style="height: 80px;width: 80px;"></h1>
+
+	                            <h4>Design and Development</h4>
+
+	                        </div>
+	                        <a href="photo/design/design.html">
+	                            <div class="package-list">
+	                                <p style="color: black">Graphic design team broadly refers to the tasks associated with developing websites for hosting via internet. The web development process includes web-design, web content
+	                                    development,posters for all the notifications related to the publicity of the team.
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6 single-price">
+
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/Social_Media_Marketing-512.png" style="height: 80px;width: 80px;"></h1>
+	                            <h4>Media and Publicity</h4>
+
+	                        </div>
+	                        <a href="photo/media/media.html">
+	                            <div class="package-list">
+
+	                                <p style="color: black">Media team is responsible for the promotion and publicity of the club in and out of the campus . Moreover, it handles the social media existence of the club.
+	                                    There main motive is to make people aware of the events and workshops and organized by the club.
+
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+
+	                    <div class="col-lg-4 col-md-6 single-price">
+
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/images.png" style="height: 80px;width: 80px;border-radius: 250px 250px;"></h1>
+	                            <h4>Finance</h4>
+	                        </div>
+	                        <a href="photo/finance/finance.html">
+	                            <div class="package-list">
+	                                <p style="color: black">Finance Team manages all the bills, expenses and budget-calls of each and every Event that takes place under our domain.
+	                                    The main task for this team is to draft the event within a specified budget.
+
+
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+
+
+	                </div>
+
+
+	                <div class="row">
+	                    <div class="col-lg-4 col-md-6 single-price">
+
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/events_icon_front.jpg" style="height:80px;width:80px;border-radius: 250px 250px;"></h1>
+	                            <h4>Event Management</h4>
+	                        </div>
+	                        <a href="photo/EM/em.html">
+	                            <div class="package-list">
+	                                <p style="color: black">Event Management is amongst the most important teams of our club. The work involved is planning, organizing and conducting all the events and workshops throughout the year . Their job is to keep everyone working together for smooth conducting of the events.
+
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6 single-price">
+
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/data-entry-icon-7.jpg" style="height: 80px;width: 80px;"></h1>
+	                            <h4>Data Analytics</h4>
+	                        </div>
+	                        <a href="photo/datateam/datateam.html">
+	                            <div class="package-list">
+	                                <p style="color: black">The crux of Data Analytics is to keep record of all the events , workshops , meetings. So, basically it’s the Journal of The Literario Club. All the details about event , timings , records of participants and winners is facilitated by data team.
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+	                    <div class="col-lg-4 col-md-6 single-price">
+
+	                        <div class="top-part">
+	                            <h1 class="package-no"><img src="img/ExpertEditorIconV4.png" style="border-radius: 250px 250px; height: 80px;width: 80px; "></h1>
+	                            <h4>Editorial</h4>
+	                        </div>
+	                        <a href="photo/editorial/editorial.html">
+	                            <div class="package-list">
+	                                <p style="color: black">Editorial Team is the soul of Literario. Being a literary club content has great importance. And so, the main work of Editorial team is to provide content for all the Events and workshops whether its regarding the mails, articles, magazines and a variety of content-driven work.
+	                                </p>
+	                            </div>
+	                        </a>
+	                    </div>
+
+
+	                </div>
+	            </div>
+
+	        </section>
+	        <!-- End price Area -->
+
+
+	        <!-- Start callaction Area -->
+	        <section class="callaction-area relative section-gap">
+	            <div class="overlay overlay-bg"></div>
+	            <div class="container">
+	                <div class="row justify-content-center">
+	                    <div class="col-lg-10">
+	                        <h1 class="text-white">The harder you work for something, the greater you'll feel when you achieve it.</h1>
+	                        <p>
+	                            ' The Way get Started is to Quit Talking and Begin Doing'
+	                        </p>
+	                        <a class="callaction-btn" href="responsive_form.html" target="_blank">Become a Member</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	        <!-- End callaction Area -->
+
+
+	        <!-- footer start-->
+	        <footer class="ts-footer">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-lg-8 mx-auto">
+	                        <div class="ts-footer-social text-center mb-30">
+	                            <ul>
+	                                <li>
+	                                    <a href="https://www.facebook.com/LiterarioClub"><i class="fa fa-facebook"></i></a>
+	                                </li>
+	                                <li>
+	                                    <a href="#"><i class="fa fa-twitter"></i></a>
+	                                </li>
+	                                <li>
+	                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+	                                </li>
+	                                <li>
+	                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+	                                </li>
+	                                <li>
+	                                    <a href="https://www.instagram.com/literario_glau"><i class="fa fa-instagram"></i></a>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                        <!-- footer social end-->
+	                        <div class="footer-menu text-center mb-25">
+	                            <ul>
+	                                <li><a href="index.html#ts-intro intro-line section-bg">About</a></li>
+	                                <li><a href="team/team.html">Team</a></li>
+	                                <li><a href="mailto:abacusgla@gmail.com">Contact</a></li>
+	                                <li><a href="index.html#ts-schedule">Schedule</a></li>
+	                                <li><a href="http://gla.ac.in/">GLA University,Mathura</a></li>
+	                            </ul>
+	                        </div><!-- footer menu end-->
+	                        <div class="copyright-text text-center">
+	                            <p>Literario || <a href="#"> Designed By :AKASH, ASHI AND MANSI </a></p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+	        <!-- footer end-->
+	        <div class="BackTo">
+	            <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+	        </div>
+
+
+	        <!-- ts footer area end-->
+	        <script src="js/particles.js"></script>
+	        <script src="js/particles.min.js"></script>
+
+	        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+	        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	        <script src="js/vendor/bootstrap.min.js"></script>
+	        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	        <script src="js/easing.min.js"></script>
+	        <script src="js/hoverIntent.js"></script>
+	        <script src="js/superfish.min.js"></script>
+	        <script src="js/jquery.ajaxchimp.min.js"></script>
+	        <script src="js/jquery.magnific-popup.min.js"></script>
+	        <script src="js/owl.carousel.min.js"></script>
+	        <script src="js/jquery.sticky.js"></script>
+	        <script src="js/jquery.nice-select.min.js"></script>
+	        <script src="js/parallax.min.js"></script>
+	        <script src="js/mail-script.js"></script>
+	        <script src="js/main.js"></script>
+	    </div>
+
+
+	    <script>
+	        $(document).ready(function() {
+	            //Preloader
+	            $(window).on("load", function() {
+	                preloaderFadeOutTime = 500;
+
+	                function hidePreloader() {
+	                    var preloader = $('.spinner-wrapper');
+	                    preloader.fadeOut(preloaderFadeOutTime);
+	                }
+	                hidePreloader();
+	            });
+	        });
+	    </script>
+
+
+
+	</body>
+	<!--CSS Spinner-->
+
+	</html>

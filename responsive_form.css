@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Roboto',sans-serif;
+}
+
+body{
+	background: url('bg7.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+}
+
+
+
+h1{
+	color:#ffffff;
+}
+
+.wrapper{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-60%);
+	width: 100%;
+	padding: 0 20px;
+}
+
+.contact-form{
+	max-width: 550px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.8);
+	padding: 30px;
+	border-radius: 7px;
+	display: flex;
+	box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%
+}
+
+.input-fields,
+.msg{
+	width: 48%
+}
+
+.input-fields .input,
+.msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border:0;
+	border-bottom: 2px solid #c5ecfd;
+	padding: 10px;
+	color: #c5ecfd;
+	width: 100%;
+    margin-bottom: 20px;
+}
+
+.msg textarea{
+	height: 212px;
+}
+
+::-ms-input-placeholder{
+   color: #c5ecfd;
+} 
+
+.btn{
+	  background-color: #8ab92d;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 13px 50px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 100px 100px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+.btn:hover {
+    background-color: transparent;
+    border-color: #8ab92d;
+    color: #8ab92d
+}
+
+@media screen and (max-width: 600px){
+	.contact-form{
+		flex-direction: column;
+	}
+	.msg textarea{
+		height: 80px;
+	}
+	.input-fields,
+	.msg{
+		width: 100%;
+	}
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
